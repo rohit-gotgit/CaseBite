@@ -1,0 +1,12 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "jsx-a11y/alt-text": "warn",
+    "no-var": "error",
+    "@typescript-eslint/no-namespace": "off", // Allow TypeScript namespaces
+    "@typescript-eslint/no-explicit-any": "off" // Allow the use of 'any' type
+  }
+}
