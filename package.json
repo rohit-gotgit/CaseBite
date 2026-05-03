@@ -48,8 +48,8 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
     "mini-css-extract-plugin": "^2.9.2",

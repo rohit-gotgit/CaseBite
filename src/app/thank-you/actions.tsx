@@ -7,7 +7,7 @@ export const getPaymentStatus = async ({ orderId }: { orderId: string }) => {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
 
-  if (!user.email || !user.id) {
+  if (!user || !user.email || !user.id) {
     throw new Error("You need to be logged in to see this page.");
   }
 
