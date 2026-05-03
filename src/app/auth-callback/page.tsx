@@ -9,6 +9,7 @@ import { Loader2 } from "lucide-react";
 const Page = () => {
   const [configId, setConfigId] = useState<string | null>(null);
   const router = useRouter();
+
   useEffect(() => {
     const configurationid = localStorage.getItem("configurationId");
     if (configurationid) {
@@ -23,7 +24,12 @@ const Page = () => {
     retryDelay: 500,
   });
 
-  if (data?.success) {
+
+  const isOAuthCallback =
+    typeof window !== "undefined" &&
+    window.location.search.includes("code=");
+
+  if (data?.success && isOAuthCallback) {
     if (configId) {
       localStorage.removeItem("configurationId");
       router.push(`/configure/preview?id=${configId}`);
