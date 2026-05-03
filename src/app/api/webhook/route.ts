@@ -1,4 +1,6 @@
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 import { db } from "@/db";
 import { stripe } from "@/lib/stripe";
 import { headers } from "next/headers";
@@ -7,10 +9,13 @@ import Stripe from "stripe";
 import { Resend } from "resend";
 import OrderReceivedEmail from "@/components/emails/OrderReceivedEmail";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      throw new Error("Missing RESEND_API_KEY");
+    }
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const body = await req.text();
     const headersList = await headers();
     const signature = headersList.get("stripe-signature");
@@ -18,6 +23,7 @@ export async function POST(req: Request) {
     if (!signature) {
       return new Response("Invalid signature", { status: 400 });
     }
+
     const event = stripe.webhooks.constructEvent(
       body,
       signature,
@@ -78,7 +84,7 @@ export async function POST(req: Request) {
         react: OrderReceivedEmail({
           orderId,
           orderDate: updatedOrder.createdAt.toDateString(),
-          // @ts-expect-error This line throws an error due to type mismatch in third-party library
+          // @ts-expect-error third-party typing issue
           shippingAddress: {
             name: session.customer_details!.name!,
             city: shippingAddress!.city!,
@@ -90,6 +96,7 @@ export async function POST(req: Request) {
         }),
       });
     }
+
     return NextResponse.json({ result: event, ok: true });
   } catch (error) {
     console.error(error);
