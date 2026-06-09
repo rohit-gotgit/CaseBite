@@ -1,6 +1,6 @@
 # Casebite
 
-Casebite is a modern full-stack e-commerce application that enables users to design and purchase fully customizable phone cases. It combines an interactive design experience with secure authentication, seamless payments, and efficient order management
+Casebite is a modern full-stack e-commerce application that enables users to design and purchase fully customizable phone cases. It combines an interactive design experience with secure authentication, seamless payments, and efficient order management.
 
 ---
 
