@@ -5,10 +5,12 @@
 Custom Phone Case Design & E-Commerce Platform.
 
 <br>
-<p align="center">
-  <img height="48" src="https://skillicons.dev/icons?i=nextjs,ts,postgres,prisma,tailwind" />
-</p>
-
+<img src="https://img.shields.io/badge/Next.js-Full--Stack-black?logo=nextdotjs" />
+<img src="https://img.shields.io/badge/PostgreSQL-DB-336791?logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma" />
+<img src="https://img.shields.io/badge/Stripe-Payments-635BFF?logo=stripe&logoColor=white" />
+<img src="https://img.shields.io/badge/Kinde-Auth-success" />
+<img src="https://img.shields.io/badge/UploadThing-Storage-orange" />
 </div>
 
 ---
