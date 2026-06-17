@@ -1,8 +1,27 @@
-# Casebite
+<div align="center">
 
-Casebite is a modern full-stack e-commerce application that enables users to design and purchase fully customizable phone cases. It combines an interactive design experience with secure authentication, seamless payments, and efficient order management.
+# CaseBite
+
+Custom Phone Case Design & E-Commerce Platform.
+
+<br>
+
+<img src="https://img.shields.io/badge/Next.js-Full%20Stack-black?logo=nextdotjs" />
+<img src="https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma" />
+<img src="https://img.shields.io/badge/Stripe-Secure%20Payments-635BFF?logo=stripe&logoColor=white" />
+<img src="https://img.shields.io/badge/Kinde-Authentication-success" />
+<img src="https://img.shields.io/badge/UploadThing-Media%20Storage-orange" />
+
+</div>
 
 ---
+
+## Overview
+
+Casebite provides a streamlined design-to-purchase experience, allowing users to upload images, customize phone cases in real time, and complete secure transactions through an integrated checkout flow. The platform emphasizes performance, scalability, and maintainable system design across the entire commerce lifecycle.
+
+Built with Next.js, PostgreSQL, Prisma, Stripe, and Kinde Auth, it demonstrates modern full-stack development practices including server-side rendering, authentication, image processing, and type-safe application architecture.
 
 ## Table of Contents
 
@@ -13,12 +32,6 @@ Casebite is a modern full-stack e-commerce application that enables users to des
 - Environment Variables
 - Project Structure
 - Deployment
-
----
-
-## Overview
-
-Casebite provides a smooth end-to-end user journey — from uploading an image and customizing a phone case to secure checkout and order tracking. The platform is built with performance, scalability, and clean architecture in mind.
 
 ---
 
