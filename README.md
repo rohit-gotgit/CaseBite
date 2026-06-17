@@ -9,12 +9,6 @@ Custom Phone Case Design & E-Commerce Platform.
   <img height="48" src="https://skillicons.dev/icons?i=nextjs,ts,postgres,prisma,tailwind" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Stripe-635BFF?logo=stripe&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kinde-000000?logoColor=white" />
-  <img src="https://img.shields.io/badge/UploadThing-FF7A00?logoColor=white" />
-</p>
-
 </div>
 
 ---
