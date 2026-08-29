@@ -1,7 +1,6 @@
 <div align="center">
 
 # CaseBite
-
 Custom Phone Case Design & E-Commerce Platform.
 
 <br>
